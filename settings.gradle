@@ -1,0 +1,2 @@
+rootProject.name='Cross Platform App Widget'
+include ':app'
