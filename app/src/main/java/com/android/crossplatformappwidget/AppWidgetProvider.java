@@ -7,9 +7,9 @@ import android.widget.RemoteViews;
 
 // Need the following import to get access to the app resources, since this
 // class is in a sub-package.
-import com.android.apis.R;
+//import com.android.apis.layout;
 
-public class CrossPlatformAppWidgetProvider extends AppWidgetProvider {
+class CrossPlatformAppWidgetProvider extends AppWidgetProvider {
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         final int N = appWidgetIds.length;
 
@@ -23,11 +23,11 @@ public class CrossPlatformAppWidgetProvider extends AppWidgetProvider {
 
             // Get the layout for the App Widget and attach an on-click listener
             // to the button
-            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.appwidget_provider_layout);
+//            RemoteViews views = new RemoteViews(context.getPackageName(), layout.appwidget_provider);
 //            views.setOnClickPendingIntent(R.id.button, pendingIntent);
 
             // Tell the AppWidgetManager to perform an update on the current app widget
-            appWidgetManager.updateAppWidget(appWidgetId, views);
+//            appWidgetManager.updateAppWidget(appWidgetId, views);
         }
     }
 }
